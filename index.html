@@ -4,56 +4,101 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Systemeye Exchange</title>
+    <title>System Eye Exchange</title>
     <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
   <body>
     <main>
-      <div class="stepper">
-        <div class="step--1 step-active">Step 1</div>
-        <div class="step--2">Step 2</div>
-        <div class="step--3">Step 3</div>
-        <div class="step--4">Finish</div>
+      <div class="stepper-wrapper">
+        <div class="stepper">
+          <div class="step--1 step-active">Step 1</div>
+          <div class="step--2">Step 2</div>
+          <div class="step--3">Step 3</div>
+          <div class="step--4">Finish</div>
+        </div>
       </div>
      
-      <form class="form form-active">
-        <div class="form--header-container">
-          <h1 class="form--header-title">Exchange Details </h1>
-          <p class="form--header-text">Specification (Addition)</p>
+      <div class="main-wrapper">
+        <img src="/assets/img/Laptop.jpg" alt="bus" height="100%" width="100%" class="img-holder" />
+        <div>
+          <form class="form form-active">
+            <div class="form--header-container">
+              <h1 class="form--header-title">Specification (Addition)</h1>
+            </div>
+            <div class="input-container">
+              <input type="text" placeholder="Product" />
+              <input type="text" placeholder="Brand" />
+            </div>
+            <div class="input-container">
+              <input type="text" placeholder="Model" />
+            </div>
+            <div class="input-container">
+              <input type="text" placeholder="Processor" />
+              <input type="text" placeholder="RAM" />
+            </div>
+            <div class="input-container">
+              <input type="text" placeholder="Storage" />
+              <input type="text" placeholder="Display" />
+            </div>
+            <div class="input-container">
+              <input type="text" placeholder="Graphics Card" />
+              <input type="text" placeholder="Battery Backup" />
+            </div>
+
+            <button class="form__btn" id="btn-1">Next</button>
+          </form>
+          <form class="form">
+            <div class="form--header-container">
+              <h1 class="form--header-title">Product Condition (Deduction):</h1>
+            </div>
+            <div class="input-container">
+              <input type="text" placeholder="Username" />
+              <input type="text" placeholder="Email" />
+            </div>
+            <div class="input-container">
+              <input type="text" placeholder="Laptop Power" />
+              <input type="text" placeholder=" Processor Status" />
+            </div>
+            <div class="input-container">
+              <input type="text" placeholder="Storage Status" />
+              <input type="text" placeholder="RAM Status" />
+            </div>
+            <div class="input-container">
+              <input type="text" placeholder="Display Status" />
+              <input type="text" placeholder="Graphics CArd" />
+            </div>
+            <div class="input-container">
+              <input type="text" placeholder="Physical Condition" />
+              <input type="text" placeholder="More Condition" />
+            </div>
+            <div class="input-container">
+              <label for="img">Select image1:</label>
+              <input type="file" id="img" name="img" accept="image/*">
+              <input type="submit">
+            </div>
+            <div class="input-container">
+              <label for="img">Select image2:</label>
+              <input type="file" id="img" name="img" accept="image/*">
+              <input type="submit">
+            </div>
+
+            <button class="form__btn" id="btn-2-prev">Previous</button>
+            <button class="form__btn" id="btn-2-next">Next</button>
+          </form>
+          <form class="form">
+            <div class="form--header-container">
+              <h1 class="form--header-title">User Info</h1>
+            </div>
+            <div style="display: flex; justify-content: center">
+              <p><b>Enter Your Phone Number</b></p>
+              <input type="text" placeholder="Phone Number" />
+            </div>
+            <button class="form__btn" id="btn-3-prev">Previous</button>
+            <button class="form__btn" id="btn-3">Submit</button>
+          </form>
+          <div class="form--message"></div>
         </div>
-        <p><b>Product</b></p>
-        <input type="text" placeholder="Laptop" />
-        <p><b>Model</b></p>
-        <input type="text" placeholder=" " />
-        <p><b>Processor</b></p>
-        <input type="text" placeholder=" " />
-        
-        
-        <button class="form__btn" id="btn-1">Next</button>
-      </form>
-      <form class="form">
-        <div class="form--header-container">
-          <h1 class="form--header-title">Company Info</h1>
-          <p class="form--header-text">Tell us more about your company.</p>
         </div>
-        <input type="text" placeholder="Username" />
-        <input type="text" placeholder="Email" />
-        <input type="password" placeholder="Password" />
-        <input type="password" placeholder="Confirm Password" />
-        <input type="text" placeholder="Phone" />
-        <input type="text" placeholder="Position" />
-        <button class="form__btn" id="btn-2-prev">Previous</button>
-        <button class="form__btn" id="btn-2-next">Next</button>
-      </form>
-      <form class="form">
-        <div class="form--header-container">
-          <h1 class="form--header-title">Social account</h1>
-          <p class="form--header-text">Tell us more about your social account.</p>
-        </div>
-        <input type="text" placeholder="Phone Number" />
-        <button class="form__btn" id="btn-3">Submit pl</button>
-      </form>
-      <div class="form--message"></div>
     </main>
   </body>
   <link rel="stylesheet" href="style.css">

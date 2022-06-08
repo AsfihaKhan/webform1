@@ -1,5 +1,6 @@
 const formBtn1 = document.querySelector('#btn-1');
 const formBtnPrev2 = document.querySelector('#btn-2-prev');
+const formBtnPrev3 = document.querySelector('#btn-3-prev');
 const formBtnNext2 = document.querySelector('#btn-2-next');
 const formBtn3 = document.querySelector('#btn-3');
 
@@ -18,6 +19,11 @@ formBtnNext2.addEventListener('click', function (e) {
 // Previous button listener of form 2
 formBtnPrev2.addEventListener('click', function (e) {
   gotoNextForm(formBtnNext2, formBtn1, 2, 1);
+  e.preventDefault();
+});
+
+formBtnPrev3.addEventListener('click', function (e) {
+  gotoNextForm(formBtn3, formBtnNext2, 3, 2);
   e.preventDefault();
 });
 
